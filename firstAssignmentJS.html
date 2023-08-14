@@ -63,20 +63,20 @@
 
         // Hoisting is using a variable before it has been declared.
 
-        var firstNum = prompt("Enter first number:");
-        var secondNum = prompt("Enter second number:");
-        var thirdNum = prompt("Enter third number:");
-        var forthNum = prompt("Enter forth number:");
+        var firstNum = +prompt("Enter first number:");
+        var secondNum = +prompt("Enter second number:");
+        var thirdNum = +prompt("Enter third number:");
+        var forthNum = +prompt("Enter forth number:");
         var avg1 = (firstNum + secondNum + thirdNum + forthNum)/4;
         var sum1 = firstNum + secondNum + thirdNum + forthNum;
         console.log(avg1 , sum1);
 
-        var width1 = prompt("Enter a width: ");
-        var length1 = prompt("Enter a length: ");
+        var width1 = +prompt("Enter a width: ");
+        var length1 = +prompt("Enter a length: ");
         console.log(width1 * length1);
 
-        var userNum = prompt("Enter a number: ");
-        var userNum1 = prompt("Enter another number: ");
+        var userNum = +prompt("Enter a number: ");
+        var userNum1 = +prompt("Enter another number: ");
         var switchNum = 0;
         switchNum = userNum;
         userNum = userNum1;
@@ -84,14 +84,14 @@
         userNum1 = switchNum;
         console.log(userNum1);
 
-        var num1 = prompt("Enter a number: ");
-        var num2 = prompt("Enter another number: ");
-        var num3 = prompt("Enter another number: ");
+        var num1 = +prompt("Enter a number: ");
+        var num2 = +prompt("Enter another number: ");
+        var num3 = +prompt("Enter another number: ");
         var mul = num1 * num2 * num3;
         console.log(mul);
 
-        var first = prompt("Enter a number: ");
-        var second = prompt("Enter another number: ");
+        var first = +prompt("Enter a number: ");
+        var second = +prompt("Enter another number: ");
         var result = first % second;
         console.log(result);
 
@@ -100,19 +100,28 @@
         var result = first % second;
         console.log(result);
 
-        var num = prompt("Enter a number: ");
+        var num = +prompt("Enter a number: ");
         num++;
         console.log(num);
 
-        var num = prompt("Enter a number: ");
+        var num = +prompt("Enter a number: ");
         num *= 3;
         console.log(num);
 
-        var radius = prompt("Enter a radius: ");
+        var radius = +prompt("Enter a radius: ");
         var pi = Math.PI;
         var area = pi * (radius ** 2);
         var circumference = 2 * pi * radius;
         console.log(area, circumference);
+
+        var firstPlayer = prompt("Enter first player name: ");
+        var firstPlayerAge = +prompt("Enter first player age: ");
+        var secondPlayer = prompt("Enter second player name: ");
+        var secondPlayerAge = +prompt("Enter second player age: ");
+        var thirdPlayer = prompt("Enter third player name: ");
+        var thirdPlayerAge = +prompt("Enter third player age: ");
+        var avgAge = (firstPlayerAge + secondPlayerAge + thirdPlayerAge)/3;
+        console.log(firstPlayer + " , " + secondPlayer  + " , " +  thirdPlayer  + " , " +  avgAge);
 
 
 
